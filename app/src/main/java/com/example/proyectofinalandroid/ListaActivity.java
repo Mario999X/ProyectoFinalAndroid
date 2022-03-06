@@ -1,6 +1,6 @@
 package com.example.proyectofinalandroid;
 
-import android.content.Context;
+
 import android.os.Bundle;
 import android.util.Log;
 
@@ -71,7 +71,6 @@ public class ListaActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
     }
 
     @Override

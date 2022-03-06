@@ -9,9 +9,7 @@ public class Producto {
     private String description;
     private String image;
 
-    //general un constructor con los datos de inserccion
-
-
+    //generar un constructor con los datos de inserccion
     public Producto(String title, String price, String category, String description, String image) {
         this.title = title;
         this.price = price;

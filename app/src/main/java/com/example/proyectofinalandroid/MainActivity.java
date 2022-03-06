@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,9 +38,11 @@ public class MainActivity extends AppCompatActivity {
         if (campoUsuario.getText().toString().trim().length() > 0 && campoContraseñaUsuario.getText().toString().trim().length() > 0 ){
             Intent intent = new Intent(MainActivity.this, MenuPrincipalActivity.class);
             startActivity(intent);
+            campoUsuario.setText("");
+            campoContraseñaUsuario.setText("");
 
         } else {
-            System.out.println("Introduzca algo en ambos campos para acceder.");
+            Toast.makeText(this, "Falta rellenar algun campo", Toast.LENGTH_SHORT).show();
         }
     }
 }
