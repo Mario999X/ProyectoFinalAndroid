@@ -7,33 +7,34 @@
 
     <ImageView
         android:id="@+id/imagenUsuario"
-        android:layout_width="295dp"
-        android:layout_height="282dp"
+        android:layout_width="367dp"
+        android:layout_height="424dp"
         android:src="@drawable/avatar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.288" />
+        app:layout_constraintVertical_bias="0.1" />
 
     <Button
         android:id="@+id/btnProductos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="216dp"
+        android:layout_width="135dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="160dp"
         android:onClick="verLista"
         android:text="Productos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnGrafico"
-        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintHorizontal_bias="0.019"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnGrafico"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="216dp"
+        android:layout_width="135dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="160dp"
         android:text="Gráfico"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
