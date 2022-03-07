@@ -43,7 +43,6 @@ public class RecyclerAdapterProducto extends RecyclerView.Adapter<RecyclerAdapte
         holder.tituloProducto.setText(item.getTitle());
         holder.precioProducto.setText("Precio: "+ item.getPrice() + " €");
         holder.categoriaProducto.setText("Categoría: " + item.getCategory());
-        holder.descripcionProducto.setText("Descripción: "+ item.getDescription());
 
         Glide.with(context).load(item.getImage()).into(holder.imagenProducto);
     }
@@ -55,7 +54,7 @@ public class RecyclerAdapterProducto extends RecyclerView.Adapter<RecyclerAdapte
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
-        TextView tituloProducto, precioProducto, categoriaProducto, descripcionProducto;
+        TextView tituloProducto, precioProducto, categoriaProducto;
         ImageView imagenProducto;
 
         public ViewHolder(@NonNull View itemView) {
@@ -64,7 +63,6 @@ public class RecyclerAdapterProducto extends RecyclerView.Adapter<RecyclerAdapte
             tituloProducto = itemView.findViewById(R.id.textView_title);
             precioProducto = itemView.findViewById(R.id.textView_price);
             categoriaProducto = itemView.findViewById(R.id.textView_category);
-            descripcionProducto = itemView.findViewById(R.id.textView_descripcion);
             imagenProducto = itemView.findViewById(R.id.imageView_product);
 
             itemView.setOnClickListener(this);

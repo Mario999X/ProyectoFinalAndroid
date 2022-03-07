@@ -81,6 +81,8 @@ public class ListaActivity extends AppCompatActivity {
                 intent.putExtra("imagen", productoList.get(posicion).getImage());
                 intent.putExtra("titulo", productoList.get(posicion).getTitle());
                 intent.putExtra("precio", productoList.get(posicion).getPrice());
+                intent.putExtra("categoria", productoList.get(posicion).getCategory());
+                intent.putExtra("descripcion", productoList.get(posicion).getDescription());
                 startActivity(intent);
             }
         };
