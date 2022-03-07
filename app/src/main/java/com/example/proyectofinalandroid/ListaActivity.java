@@ -1,9 +1,13 @@
 package com.example.proyectofinalandroid;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
+import android.view.View;
+import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.Toast;
 
 
@@ -24,20 +28,21 @@ public class ListaActivity extends AppCompatActivity {
     List<Producto> productoList = new ArrayList<>();
     RecyclerAdapterProducto adapterProducto;
     LinearLayoutManager layoutManager;
+    RecyclerView recyclerView;
+    ClickListener clickListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_productos);
-
         cargarLista();
-
     }
 
-    private void cargarLista(){
+    public void cargarLista(){
+        setOnClickListener();
         ApiService apiService = ApiCliente.getCliente().create(ApiService.class);
 
-        RecyclerView recyclerView = findViewById(R.id.recycler);
+        recyclerView = findViewById(R.id.recycler);
 
         layoutManager = new LinearLayoutManager(recyclerView.getContext());
         recyclerView.setLayoutManager(layoutManager);
@@ -54,7 +59,7 @@ public class ListaActivity extends AppCompatActivity {
                 //cargar la lista de elemento en la lista
                 productoList = response.body();
 
-                adapterProducto = new RecyclerAdapterProducto(productoList, recyclerView.getContext());
+                adapterProducto = new RecyclerAdapterProducto(productoList, recyclerView.getContext(),clickListener);
                 recyclerView.setAdapter(adapterProducto);
             }
 
@@ -67,6 +72,20 @@ public class ListaActivity extends AppCompatActivity {
             }
         });
     }
+
+    private void setOnClickListener() {
+        clickListener = new ClickListener() {
+            @Override
+            public void onItemClick(int posicion, View view) {
+                Intent intent = new Intent(getApplicationContext(), DetalleActivity.class);
+                intent.putExtra("imagen", productoList.get(posicion).getImage());
+                intent.putExtra("titulo", productoList.get(posicion).getTitle());
+                intent.putExtra("precio", productoList.get(posicion).getPrice());
+                startActivity(intent);
+            }
+        };
+    }
+
 
     @Override
     protected void onResume() {
