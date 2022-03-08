@@ -1,6 +1,6 @@
 # --- PROYECTO FINAL ANDROID ---
 
-Se trata de una aplicación android compuesta únicamente de actividades.
+Se trata de una aplicación android compuesta únicamente de actividades y hecha en Java.
 
 Usando Retrofit, realizamos una llamada a una API (https://fakestoreapi.com/) y obtenemos una serie de productos.
 
