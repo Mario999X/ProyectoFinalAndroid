@@ -13,7 +13,7 @@ Usando Retrofit, realizamos una llamada a una API (https://fakestoreapi.com/) y 
             5. Una actividad puramente de decoración intentado recrear una vista de tabla,
             bastante poco práctica para un móvil.
         6. Btn "PRODUCTOS".
-            7. Una actividad que cuando comienza realiza la llamada a la API*, mostrándo
+            7. Una actividad que cuando comienza realiza la llamada a la API*, mostrando
             un RecyclerView con los productos.
             8. Pulsando encima de uno de esos productos, nos aparecera una nueva actividad,
             que nos ofrece una vista detallada del producto elegido.
