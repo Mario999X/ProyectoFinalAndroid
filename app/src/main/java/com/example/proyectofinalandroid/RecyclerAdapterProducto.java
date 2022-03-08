@@ -1,7 +1,6 @@
 package com.example.proyectofinalandroid;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,7 +51,7 @@ public class RecyclerAdapterProducto extends RecyclerView.Adapter<RecyclerAdapte
         return productoList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         TextView tituloProducto, precioProducto, categoriaProducto;
         ImageView imagenProducto;
@@ -71,7 +70,7 @@ public class RecyclerAdapterProducto extends RecyclerView.Adapter<RecyclerAdapte
 
         @Override
         public void onClick(View view) {
-            clickListener.onItemClick(getAdapterPosition(),view);
+            clickListener.onItemClick(getAdapterPosition(), view);
         }
     }
 }

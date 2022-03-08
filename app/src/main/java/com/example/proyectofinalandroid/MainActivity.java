@@ -21,23 +21,21 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
     }
 
     @Override
-    protected void onPause(){
+    protected void onPause() {
         super.onPause();
-
     }
 
-    public void verMenuPrincipal(View view){
+    public void verMenuPrincipal(View view) {
         campoUsuario = findViewById(R.id.campoUsuario);
         campoContraseñaUsuario = findViewById(R.id.campoContraseñaUsuario);
 
-        if (campoUsuario.getText().toString().trim().length() > 0 && campoContraseñaUsuario.getText().toString().trim().length() > 0 ){
+        if (campoUsuario.getText().toString().trim().length() > 0 && campoContraseñaUsuario.getText().toString().trim().length() > 0) {
             Intent intent = new Intent(MainActivity.this, MenuPrincipalActivity.class);
-            intent.putExtra("nombreUsuario",campoUsuario.getText().toString());
             startActivity(intent);
+            campoUsuario.setText("");
             campoContraseñaUsuario.setText("");
 
         } else {

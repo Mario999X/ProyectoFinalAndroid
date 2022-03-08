@@ -6,11 +6,10 @@ import android.os.Bundle;
 import android.util.Log;
 
 import android.view.View;
-import android.widget.Adapter;
-import android.widget.AdapterView;
 import android.widget.Toast;
 
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -38,7 +37,7 @@ public class ListaActivity extends AppCompatActivity {
         cargarLista();
     }
 
-    public void cargarLista(){
+    public void cargarLista() {
         setOnClickListener();
         ApiService apiService = ApiCliente.getCliente().create(ApiService.class);
 
@@ -51,24 +50,24 @@ public class ListaActivity extends AppCompatActivity {
 
         listCall.enqueue(new Callback<List<Producto>>() {
             @Override
-            public void onResponse(Call<List<Producto>> call, Response<List<Producto>> response) {
+            public void onResponse(@NonNull Call<List<Producto>> call, @NonNull Response<List<Producto>> response) {
 
-                if(!response.isSuccessful()){
-                    Toast.makeText(recyclerView.getContext(),"Error en la conexion", Toast.LENGTH_SHORT).show();
+                if (!response.isSuccessful()) {
+                    Toast.makeText(recyclerView.getContext(), "Error en la conexion", Toast.LENGTH_SHORT).show();
                 }
                 //cargar la lista de elemento en la lista
                 productoList = response.body();
 
-                adapterProducto = new RecyclerAdapterProducto(productoList, recyclerView.getContext(),clickListener);
+                adapterProducto = new RecyclerAdapterProducto(productoList, recyclerView.getContext(), clickListener);
                 recyclerView.setAdapter(adapterProducto);
             }
 
             @Override
-            public void onFailure(Call<List<Producto>> call, Throwable t) {
+            public void onFailure(@NonNull Call<List<Producto>> call, @NonNull Throwable t) {
 
                 //ha fallado la conexion
                 Toast.makeText(recyclerView.getContext(), t.getMessage(), Toast.LENGTH_SHORT).show();
-                Log.i("info", "onFailure: "+t.getMessage());
+                Log.i("info", "onFailure: " + t.getMessage());
             }
         });
     }

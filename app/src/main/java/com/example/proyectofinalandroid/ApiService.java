@@ -87,7 +87,5 @@ public interface ApiService {
     Call<Void> deleteProducto(@Path("id") int id);
 
 
-
-
 }
 

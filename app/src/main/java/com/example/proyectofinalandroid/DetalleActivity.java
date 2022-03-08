@@ -34,7 +34,7 @@ public class DetalleActivity extends AppCompatActivity {
         String descripcion = "";
 
         Bundle extras = getIntent().getExtras();
-        if (extras != null){
+        if (extras != null) {
             imagenString = extras.getString("imagen");
             titulo = extras.getString("titulo");
             precio = extras.getString("precio");
@@ -45,7 +45,7 @@ public class DetalleActivity extends AppCompatActivity {
         Glide.with(getApplicationContext()).load(imagenString).into(imagenProductoDetalle);
         tituloProductoDetalle.setText(titulo);
         precioProductoDetalle.setText(getString(R.string.app_precio_txt) + " " + precio + " €");
-        categoriaProductoDetalle.setText(getString(R.string.app_categoria_txt) + " " +categoria);
+        categoriaProductoDetalle.setText(getString(R.string.app_categoria_txt) + " " + categoria);
         descripcionProductoDetalle.setText(descripcion);
     }
 }

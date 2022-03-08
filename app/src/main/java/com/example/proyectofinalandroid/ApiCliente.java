@@ -7,9 +7,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiCliente {
 
-    public  static  final String URL_001 = "https://fakestoreapi.com/";
+    public static final String URL_001 = "https://fakestoreapi.com/";
 
-    public static Retrofit getCliente(){
+    public static Retrofit getCliente() {
 
         //interceptar la comunicacion
         HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
