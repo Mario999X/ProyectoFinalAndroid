@@ -7,9 +7,11 @@
     <string name="btnAccess">Log In</string>
 
     <string name="btnProducts">Products</string>
-    <string name="btnChart">Chart</string>
+    <string name="btnTable">Table</string>
 
     <string name="txt_products">Products</string>
 
     <string name="txt_details">Details</string>
+
+    <string name="txt_data">Analytical data</string>
 </resources>

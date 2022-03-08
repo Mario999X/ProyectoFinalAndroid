@@ -6,9 +6,11 @@
     <string name="btnAccess">Iniciar Sesión</string>
 
     <string name="btnProducts">Productos</string>
-    <string name="btnChart">Gráfico</string>
+    <string name="btnTable">Tabla</string>
 
     <string name="txt_products">Productos</string>
 
     <string name="txt_details">Detalles</string>
+
+    <string name="txt_data">Datos analíticos</string>
 </resources>

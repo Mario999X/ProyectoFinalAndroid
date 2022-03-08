@@ -32,4 +32,9 @@ public class MenuPrincipalActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void verTabla(View view){
+        Intent intent = new Intent(MenuPrincipalActivity.this, TablaActivity.class);
+        startActivity(intent);
+    }
+
 }

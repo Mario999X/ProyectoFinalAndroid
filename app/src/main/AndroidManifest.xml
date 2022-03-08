@@ -21,15 +21,17 @@
         <activity android:name=".MenuPrincipalActivity"
             android:exported="true">
         </activity>
+        <activity android:name=".TablaActivity"
+            android:exported="true"
+            android:parentActivityName=".MenuPrincipalActivity">
+        </activity>
         <activity android:name=".ListaActivity"
             android:exported="true"
             android:parentActivityName=".MenuPrincipalActivity">
         </activity>
         <activity android:name=".DetalleActivity"
             android:exported="true"
-            android:parentActivityName=".ListaActivity"
-            >
-
+            android:parentActivityName=".ListaActivity">
     </activity>
 
     </application>
