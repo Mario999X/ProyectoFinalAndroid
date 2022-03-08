@@ -6,7 +6,7 @@ Usando Retrofit, realizamos una llamada a una API (https://fakestoreapi.com/) y 
 
 ## Las características del programa son: 
 
-    1. Una casí completa internacionalización (Español-Inglés) según el idioma que tenga el móvil.
+    1. Una casi completa internacionalización (Español-Inglés) según el idioma que tenga el móvil.
     2. Una pantalla de login (falso).
     3. Un menú principal con dos botones.
         4. Btn "TABLA".
