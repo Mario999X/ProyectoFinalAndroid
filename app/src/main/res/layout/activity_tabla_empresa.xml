@@ -20,35 +20,30 @@
                 android:id="@+id/txtInfoTabla"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:editable="false"
                 android:text="@string/txtInfoTabla" />
 
             <TextView
                 android:id="@+id/txtEneroFebMar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:editable="false"
                 android:text="@string/txtEneroFebMar" />
 
             <TextView
                 android:id="@+id/txtAbrMayJun"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:editable="false"
                 android:text="@string/txtAbrMayJun" />
 
             <TextView
                 android:id="@+id/txtJulAgSep"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:editable="false"
                 android:text="@string/txtJulAgSep" />
 
             <TextView
                 android:id="@+id/txtOctNovDic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:editable="false"
                 android:text="@string/txtOctNovDic" />
 
         </TableRow>
@@ -61,7 +56,6 @@
                 android:id="@+id/txtRopaHombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:editable="false"
                 android:text="@string/txtRopaHombre" />
 
             <TextView
@@ -97,7 +91,6 @@
                 android:id="@+id/txtRopaMujer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:editable="false"
                 android:text="@string/txtRopaMujer" />
 
             <TextView
@@ -133,7 +126,6 @@
                 android:id="@+id/txtJoyas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:editable="false"
                 android:text="@string/txtJoyas" />
 
             <TextView
@@ -169,7 +161,6 @@
                 android:id="@+id/txtElectronica"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:editable="false"
                 android:text="@string/txtElectronica" />
 
             <TextView

@@ -1,6 +1,5 @@
 package com.example.proyectofinalandroid;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -9,13 +8,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 
+// CLASE ACTIVIDAD DE DETALLES
 public class DetalleActivity extends AppCompatActivity {
 
     ImageView imagenProductoDetalle;
 
     TextView tituloProductoDetalle, precioProductoDetalle, descripcionProductoDetalle, categoriaProductoDetalle;
 
-    @SuppressLint("SetTextI18n")
+    /* Enlazamos los elementos.
+    Generamos unos String.
+    Generamos un Bundle extras, encargado de recoger la informacion rescatada de la otra clase.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

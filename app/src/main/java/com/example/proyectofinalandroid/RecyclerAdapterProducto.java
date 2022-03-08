@@ -14,12 +14,14 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
+// CLASE ADAPTER RECYCLERVIEW
 public class RecyclerAdapterProducto extends RecyclerView.Adapter<RecyclerAdapterProducto.ViewHolder> {
 
     List<Producto> productoList;
     Context context;
     private static ClickListener clickListener;
 
+    // Constructor
     public RecyclerAdapterProducto(List<Producto> productoList, Context context, ClickListener clickListener) {
         this.productoList = productoList;
         this.context = context;
@@ -34,6 +36,7 @@ public class RecyclerAdapterProducto extends RecyclerView.Adapter<RecyclerAdapte
         return new ViewHolder(view);
     }
 
+    // Rellenamos los campos que tengamos en la vista "vista_productos".
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
@@ -51,6 +54,7 @@ public class RecyclerAdapterProducto extends RecyclerView.Adapter<RecyclerAdapte
         return productoList.size();
     }
 
+    // CLASE VIEWHOLDER, IMPLEMENTANDO ONCLICKLISTENER
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         TextView tituloProducto, precioProducto, categoriaProducto;
@@ -70,7 +74,7 @@ public class RecyclerAdapterProducto extends RecyclerView.Adapter<RecyclerAdapte
 
         @Override
         public void onClick(View view) {
-            clickListener.onItemClick(getAdapterPosition(), view);
+            clickListener.onItemClick(getAdapterPosition());
         }
     }
 }

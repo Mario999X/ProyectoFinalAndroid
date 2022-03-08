@@ -7,8 +7,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+// CLASE MENU PRINCIPAL
 public class MenuPrincipalActivity extends AppCompatActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,18 +21,18 @@ public class MenuPrincipalActivity extends AppCompatActivity {
         super.onResume();
     }
 
-
     @Override
     protected void onPause() {
         super.onPause();
     }
 
-
+    // Metodo enlazado a "btnProductos". Se encarga de lanzar una nueva actividad.
     public void verLista(View view) {
         Intent intent = new Intent(MenuPrincipalActivity.this, ListaActivity.class);
         startActivity(intent);
     }
 
+    // Metodo enlazado a "btnTabla". Se encarga de lanzar una nueva actividad.
     public void verTabla(View view) {
         Intent intent = new Intent(MenuPrincipalActivity.this, TablaActivity.class);
         startActivity(intent);

@@ -1,6 +1,5 @@
 package com.example.proyectofinalandroid;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -22,6 +21,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+// CLASE ACTIVIDAD DE LISTA
 public class ListaActivity extends AppCompatActivity {
 
     List<Producto> productoList = new ArrayList<>();
@@ -37,7 +37,9 @@ public class ListaActivity extends AppCompatActivity {
         cargarLista();
     }
 
+    // Metodo que realiza una llamada usando Retrofit a una API y rellena una lista, luego visible en el RecyclerView
     public void cargarLista() {
+
         setOnClickListener();
         ApiService apiService = ApiCliente.getCliente().create(ApiService.class);
 
@@ -72,18 +74,18 @@ public class ListaActivity extends AppCompatActivity {
         });
     }
 
+    /* Metodo encargado de recoger la información de la posicion de la lista que uno pulse, esta informacion es pasada a otra actividad,
+    iniciada al final del metodo.
+     */
     private void setOnClickListener() {
-        clickListener = new ClickListener() {
-            @Override
-            public void onItemClick(int posicion, View view) {
-                Intent intent = new Intent(getApplicationContext(), DetalleActivity.class);
-                intent.putExtra("imagen", productoList.get(posicion).getImage());
-                intent.putExtra("titulo", productoList.get(posicion).getTitle());
-                intent.putExtra("precio", productoList.get(posicion).getPrice());
-                intent.putExtra("categoria", productoList.get(posicion).getCategory());
-                intent.putExtra("descripcion", productoList.get(posicion).getDescription());
-                startActivity(intent);
-            }
+        clickListener = (posicion) -> {
+            Intent intent = new Intent(getApplicationContext(), DetalleActivity.class);
+            intent.putExtra("imagen", productoList.get(posicion).getImage());
+            intent.putExtra("titulo", productoList.get(posicion).getTitle());
+            intent.putExtra("precio", productoList.get(posicion).getPrice());
+            intent.putExtra("categoria", productoList.get(posicion).getCategory());
+            intent.putExtra("descripcion", productoList.get(posicion).getDescription());
+            startActivity(intent);
         };
     }
 

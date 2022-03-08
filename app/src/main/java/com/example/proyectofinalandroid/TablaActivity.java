@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+// CLASE ACTIVIDAD DE TABLA
 public class TablaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
