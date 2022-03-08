@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
     EditText campoUsuario, campoContraseñaUsuario;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, MenuPrincipalActivity.class);
             intent.putExtra("nombreUsuario",campoUsuario.getText().toString());
             startActivity(intent);
-            campoUsuario.setText("");
             campoContraseñaUsuario.setText("");
 
         } else {
