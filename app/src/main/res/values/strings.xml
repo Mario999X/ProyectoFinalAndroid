@@ -1,4 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ProyectoFinalAndroid</string>
-    <string name="productos">Productos</string>
+    <string name="empresa_name">Ikeo</string>
+    <string name="campo_user">Usuario</string>
+    <string name="campo_passwd">Contraseña</string>
+    <string name="btnAccess">Iniciar Sesión</string>
+    <string name="app_aviso_login">Falta algún campo</string>
+
+    <string name="btnProducts">Productos</string>
+    <string name="btnTable">Tabla</string>
+
+    <string name="txt_products">Productos</string>
+    <string name="txt_details">Detalles</string>
+    <string name="app_precio_txt">Precio:</string>
+    <string name="app_categoria_txt">Categoría:</string>
+
+    <string name="txt_data">Datos analíticos</string>
+    <string name="txtInfoTabla">Categorías/Meses</string>
+    <string name="txtRopaHombre">Ropa Hombre</string>
+    <string name="txtRopaMujer">Ropa Mujer</string>
+    <string name="txtJoyas">Joyas</string>
+    <string name="txtElectronica">Electrónica</string>
+    <string name="txtEneroFebMar">En/Fe/Mar</string>
+    <string name="txtAbrMayJun">Abr/May/Jun</string>
+    <string name="txtJulAgSep">Jl/Ag/Sep</string>
+    <string name="txtOctNovDic">Oc/Nov/Dic</string>
 </resources>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="410dp"
+        android:layout_height="548dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtInfoTabla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:text="@string/txtInfoTabla" />
+
+            <TextView
+                android:id="@+id/txtEneroFebMar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:text="@string/txtEneroFebMar" />
+
+            <TextView
+                android:id="@+id/txtAbrMayJun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:text="@string/txtAbrMayJun" />
+
+            <TextView
+                android:id="@+id/txtJulAgSep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:text="@string/txtJulAgSep" />
+
+            <TextView
+                android:id="@+id/txtOctNovDic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:text="@string/txtOctNovDic" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtRopaHombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:text="@string/txtRopaHombre" />
+
+            <TextView
+                android:id="@+id/data1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato1" />
+
+            <TextView
+                android:id="@+id/data2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato2" />
+
+            <TextView
+                android:id="@+id/data3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato3" />
+
+            <TextView
+                android:id="@+id/data4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtRopaMujer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:text="@string/txtRopaMujer" />
+
+            <TextView
+                android:id="@+id/data5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato1" />
+
+            <TextView
+                android:id="@+id/data6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato2" />
+
+            <TextView
+                android:id="@+id/data7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato3" />
+
+            <TextView
+                android:id="@+id/data8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtJoyas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:text="@string/txtJoyas" />
+
+            <TextView
+                android:id="@+id/data9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato1" />
+
+            <TextView
+                android:id="@+id/data10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato2" />
+
+            <TextView
+                android:id="@+id/data11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato3" />
+
+            <TextView
+                android:id="@+id/data12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtElectronica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:text="@string/txtElectronica" />
+
+            <TextView
+                android:id="@+id/data13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato1" />
+
+            <TextView
+                android:id="@+id/data14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato2" />
+
+            <TextView
+                android:id="@+id/data15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato3" />
+
+            <TextView
+                android:id="@+id/data16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato4" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/txt_data"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

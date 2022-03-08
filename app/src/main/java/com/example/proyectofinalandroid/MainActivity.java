@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
     EditText campoUsuario, campoContraseñaUsuario;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
 
         if (campoUsuario.getText().toString().trim().length() > 0 && campoContraseñaUsuario.getText().toString().trim().length() > 0 ){
             Intent intent = new Intent(MainActivity.this, MenuPrincipalActivity.class);
+            intent.putExtra("nombreUsuario",campoUsuario.getText().toString());
             startActivity(intent);
-            campoUsuario.setText("");
             campoContraseñaUsuario.setText("");
 
         } else {
-            Toast.makeText(this, "Falta rellenar algun campo", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.app_aviso_login, Toast.LENGTH_SHORT).show();
         }
     }
 }

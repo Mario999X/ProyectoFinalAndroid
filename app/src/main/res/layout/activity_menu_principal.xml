@@ -7,35 +7,49 @@
 
     <ImageView
         android:id="@+id/imagenUsuario"
-        android:layout_width="172dp"
-        android:layout_height="167dp"
+        android:layout_width="349dp"
+        android:layout_height="291dp"
+        android:src="@drawable/avatar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.423"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.436" />
 
     <Button
         android:id="@+id/btnProductos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="216dp"
+        android:layout_width="135dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="144dp"
         android:onClick="verLista"
-        android:text="Productos"
+        android:text="@string/btnProducts"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnGrafico"
-        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnGrafico"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="216dp"
-        android:text="Gráfico"
+        android:layout_width="135dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="144dp"
+        android:onClick="verTabla"
+        android:text="@string/btnTable"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="140dp"
+        android:text="NombreUsuario"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
