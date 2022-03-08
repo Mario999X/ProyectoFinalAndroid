@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (campoUsuario.getText().toString().trim().length() > 0 && campoContraseñaUsuario.getText().toString().trim().length() > 0 ){
             Intent intent = new Intent(MainActivity.this, MenuPrincipalActivity.class);
+            intent.putExtra("nombreUsuario",campoUsuario.getText().toString());
             startActivity(intent);
             campoUsuario.setText("");
             campoContraseñaUsuario.setText("");

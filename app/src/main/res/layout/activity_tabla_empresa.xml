@@ -63,6 +63,30 @@
                 android:layout_height="wrap_content"
                 android:editable="false"
                 android:text="@string/txtRopaHombre" />
+
+            <TextView
+                android:id="@+id/data1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato1" />
+
+            <TextView
+                android:id="@+id/data2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato2" />
+
+            <TextView
+                android:id="@+id/data3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato3" />
+
+            <TextView
+                android:id="@+id/data4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato4" />
         </TableRow>
 
         <TableRow
@@ -75,6 +99,30 @@
                 android:layout_height="wrap_content"
                 android:editable="false"
                 android:text="@string/txtRopaMujer" />
+
+            <TextView
+                android:id="@+id/data5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato1" />
+
+            <TextView
+                android:id="@+id/data6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato2" />
+
+            <TextView
+                android:id="@+id/data7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato3" />
+
+            <TextView
+                android:id="@+id/data8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato4" />
         </TableRow>
 
         <TableRow
@@ -87,6 +135,30 @@
                 android:layout_height="wrap_content"
                 android:editable="false"
                 android:text="@string/txtJoyas" />
+
+            <TextView
+                android:id="@+id/data9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato1" />
+
+            <TextView
+                android:id="@+id/data10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato2" />
+
+            <TextView
+                android:id="@+id/data11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato3" />
+
+            <TextView
+                android:id="@+id/data12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato4" />
         </TableRow>
 
         <TableRow
@@ -99,6 +171,30 @@
                 android:layout_height="wrap_content"
                 android:editable="false"
                 android:text="@string/txtElectronica" />
+
+            <TextView
+                android:id="@+id/data13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato1" />
+
+            <TextView
+                android:id="@+id/data14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato2" />
+
+            <TextView
+                android:id="@+id/data15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato3" />
+
+            <TextView
+                android:id="@+id/data16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dato4" />
         </TableRow>
     </TableLayout>
 
