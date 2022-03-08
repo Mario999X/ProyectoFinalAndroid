@@ -13,4 +13,13 @@
     <string name="txt_details">Detalles</string>
 
     <string name="txt_data">Datos analíticos</string>
+    <string name="txtInfoTabla">Categorías/Meses</string>
+    <string name="txtRopaHombre">Ropa Hombre</string>
+    <string name="txtRopaMujer">Ropa Mujer</string>
+    <string name="txtJoyas">Joyas</string>
+    <string name="txtElectronica">Electrónica</string>
+    <string name="txtEneroFebMar">En/Fe/Mar</string>
+    <string name="txtAbrMayJun">Abr/May/Jun</string>
+    <string name="txtJulAgSep">Jl/Ag/Sep</string>
+    <string name="txtOctNovDic">Oc/Nov/Dic</string>
 </resources>
