@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidFinalProject</string>
+    <string name="empresa_name">Ikeo</string>
+    <string name="campo_user">User</string>
+    <string name="campo_passwd">Password</string>
+    <string name="btnAccess">Log In</string>
+
+    <string name="btnProducts">Products</string>
+    <string name="btnChart">Chart</string>
+
+    <string name="txt_products">Products</string>
+
+    <string name="txt_details">Details</string>
+</resources>

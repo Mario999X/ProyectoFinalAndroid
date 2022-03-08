@@ -7,13 +7,13 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/appNombre"
+        android:id="@+id/empresaNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="177dp"
-        android:text="Ikeo"
+        android:text="@string/empresa_name"
         android:textSize="70dp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,14 +26,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Usuario"
+        android:hint="@string/campo_user"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appNombre"
+        app:layout_constraintTop_toBottomOf="@+id/empresaNombre"
         app:layout_constraintVertical_bias="0.168" />
 
     <EditText
@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Contraseña"
+        android:hint="@string/campo_passwd"
         android:inputType="textPassword"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,7 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="verMenuPrincipal"
-        android:text="Acceder"
+        android:text="@string/btnAccess"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
