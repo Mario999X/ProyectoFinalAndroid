@@ -41,8 +41,8 @@ public class RecyclerAdapterProducto extends RecyclerView.Adapter<RecyclerAdapte
         Producto item = productoList.get(position);
 
         holder.tituloProducto.setText(item.getTitle());
-        holder.precioProducto.setText("Precio: "+ item.getPrice() + " €");
-        holder.categoriaProducto.setText("Categoría: " + item.getCategory());
+        holder.precioProducto.setText(context.getString(R.string.app_precio_txt) + " " + item.getPrice() + " €");
+        holder.categoriaProducto.setText(context.getString(R.string.app_categoria_txt) + " " + item.getCategory());
 
         Glide.with(context).load(item.getImage()).into(holder.imagenProducto);
     }

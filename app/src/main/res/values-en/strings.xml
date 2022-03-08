@@ -5,13 +5,15 @@
     <string name="campo_user">User</string>
     <string name="campo_passwd">Password</string>
     <string name="btnAccess">Log In</string>
+    <string name="app_aviso_login">Missing some field</string>
 
     <string name="btnProducts">Products</string>
     <string name="btnTable">Table</string>
 
     <string name="txt_products">Products</string>
-
     <string name="txt_details">Details</string>
+    <string name="app_precio_txt">Price:</string>
+    <string name="app_categoria_txt">Category:</string>
 
     <string name="txt_data">Analytical data</string>
     <string name="txtInfoTabla">Categories/Months</string>

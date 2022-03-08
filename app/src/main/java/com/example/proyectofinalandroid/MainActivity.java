@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             campoContraseñaUsuario.setText("");
 
         } else {
-            Toast.makeText(this, "Falta rellenar algun campo", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.app_aviso_login, Toast.LENGTH_SHORT).show();
         }
     }
 }

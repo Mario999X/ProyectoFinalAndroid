@@ -1,5 +1,6 @@
 package com.example.proyectofinalandroid;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -14,6 +15,7 @@ public class DetalleActivity extends AppCompatActivity {
 
     TextView tituloProductoDetalle, precioProductoDetalle, descripcionProductoDetalle, categoriaProductoDetalle;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,11 +27,11 @@ public class DetalleActivity extends AppCompatActivity {
         categoriaProductoDetalle = findViewById(R.id.categoriaProductoDetalle);
         descripcionProductoDetalle = findViewById(R.id.descripcionProductoDetalle);
 
-        String imagenString = "Imagen del producto";
-        String titulo = "Titulo del producto";
-        String precio = "Precio del producto";
-        String categoria = "Categoria del producto";
-        String descripcion = "Descripcion del producto";
+        String imagenString = "";
+        String titulo = "";
+        String precio = "";
+        String categoria = "";
+        String descripcion = "";
 
         Bundle extras = getIntent().getExtras();
         if (extras != null){
@@ -39,10 +41,11 @@ public class DetalleActivity extends AppCompatActivity {
             categoria = extras.getString("categoria");
             descripcion = extras.getString("descripcion");
         }
+
         Glide.with(getApplicationContext()).load(imagenString).into(imagenProductoDetalle);
         tituloProductoDetalle.setText(titulo);
-        precioProductoDetalle.setText("Precio: "+precio + " €");
-        categoriaProductoDetalle.setText("Categoría: " +categoria);
+        precioProductoDetalle.setText(getString(R.string.app_precio_txt) + " " + precio + " €");
+        categoriaProductoDetalle.setText(getString(R.string.app_categoria_txt) + " " +categoria);
         descripcionProductoDetalle.setText(descripcion);
     }
 }
