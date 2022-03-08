@@ -18,4 +18,4 @@ Usando Retrofit, realizamos una llamada a una API (https://fakestoreapi.com/) y 
             8. Pulsando encima de uno de esos productos, nos aparecera una nueva actividad,
             que nos ofrece una vista detallada del producto elegido.
 
-*A veces saltara un error de "timeout", esto se debe a la propia API, la única solución es intentarlo varias veces.
+*A veces saldrá un error de "timeout", esto se debe a la propia API, la única solución es intentarlo varias veces.
